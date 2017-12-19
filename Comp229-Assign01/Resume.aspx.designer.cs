@@ -10,15 +10,15 @@
 namespace Comp229_Assign01 {
     
     
-    public partial class SiteMaster {
+    public partial class Resume {
         
         /// <summary>
-        /// MainContent control.
+        /// resume control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Image resume;
     }
 }
