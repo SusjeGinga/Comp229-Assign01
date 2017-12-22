@@ -5,14 +5,16 @@
     <asp:Image ID="logoImg" runat="server" ImageUrl="~/Assets/Logo.png" Height="200" Width="200" />
     <asp:Image ID="bannerImg" runat="server" ImageUrl="~/Assets/banner.jpg" Height="200" Width="1000" />
 
-    <asp:HyperLink ID="resumeLink" NavigateUrl="Resume.aspx" runat="server">
-        <asp:Image ID="resume" runat="server" ImageUrl="~/Assets/photo.jpg" Height="200" Width="200" />
+    <asp:HyperLink ID="resumeLink" NavigateUrl="Resume.aspx" ImageUrl="~/Assets/photo.jpg" runat="server" 
+        ImageHeight="200" ImageWidth="200">
     </asp:HyperLink>
     <p>Click on the image to link to Resume Page</p>
 
-    <a href="~/Contact.aspx">
-        <asp:Button ID="contactBnt" runat="server" Text="Contact" />
-    </a>
+    <asp:LinkButton runat="server" id="contactBtnLink" href="Contact.aspx" 
+        CssClass="btn btn-primary btn-sm">Contact</asp:LinkButton>
+
+
+
 
     <%--<asp:TextBox ID="name" runat="server"></asp:TextBox>
         <asp:CustomValidator ID="CustomValidator1" runat="server" 

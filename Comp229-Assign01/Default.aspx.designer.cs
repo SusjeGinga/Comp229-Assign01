@@ -40,21 +40,12 @@ namespace Comp229_Assign01 {
         protected global::System.Web.UI.WebControls.HyperLink resumeLink;
         
         /// <summary>
-        /// resume control.
+        /// contactBtnLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image resume;
-        
-        /// <summary>
-        /// contactBnt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button contactBnt;
+        protected global::System.Web.UI.WebControls.LinkButton contactBtnLink;
     }
 }
