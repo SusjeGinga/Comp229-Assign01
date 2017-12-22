@@ -2,32 +2,24 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+    <asp:PlaceHolder runat="server"><h1>Contact Page</h1></asp:PlaceHolder>
 
-        <asp:Literal ID="emailLit" Text="Contact Info: hle41@my.centennialcollege.ca <br />" runat="server">
-
-        </asp:Literal>
-
-        <asp:Label ID="workAddressLab" runat="server" Text="Work address: 123 Yonge Street, ON <br />"></asp:Label>
-
-
-        <asp:Label ID="phoneLab" Text="Phone no: 123-456-7890 <br />" runat="server">
-        </asp:Label>
-
-   <asp:Label ID="contact" Text="Phone no: 123-456-7890 <br />" runat="server">
-        </asp:Label>
+    <asp:PlaceHolder runat="server"><strong>Contact Info:</strong></asp:PlaceHolder>
+    <asp:BulletedList runat="server">
+        <asp:ListItem>Email: hle41@my.centennialcollege.ca</asp:ListItem>
+        <asp:ListItem>Work address: 123 Yonge Street, ON</asp:ListItem>
+        <asp:ListItem>Phone no: 123-456-7890</asp:ListItem>
+    </asp:BulletedList>
 
 
-    <asp:BulletedList ID="BulletedList" runat="server">
-        <asp:ListItem>GIn</asp:ListItem>
-        <asp:ListItem>Helen</asp:ListItem>
-        </asp:BulletedList>
-    <%--Youtube account does not exist--%>
-    <asp:BulletedList ID="BulletedList2" runat="server" DataValueField="(Youtube) Gin Le"></asp:BulletedList>
-    <asp:BulletedList ID="BulletedList3" runat="server" DataValueField="(GitHub) Gin Le"></asp:BulletedList>
-     
+        <asp:PlaceHolder runat="server"><strong>Keep Connected:</strong></asp:PlaceHolder>
+    <asp:BulletedList runat="server">
+        <asp:ListItem>(Facebook) Gin Le</asp:ListItem>
+        <asp:ListItem>(Youtube) Hoang Giang Le</asp:ListItem>
+        <asp:ListItem>(GitHub) SusjeGinga</asp:ListItem>
+    </asp:BulletedList>
 
-        <asp:Literal ID="Literal3" Text="Leave me a message:" runat="server">
-        </asp:Literal>
+    <asp:PlaceHolder runat="server"><i>Please leave me a message if you want to contact me</i></asp:PlaceHolder>
 
         <asp:Table ID="Table1" runat="server" Height="123px" Width="567px">
             <asp:TableRow runat="server">
@@ -52,7 +44,7 @@
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server"></asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:LinkButton ID="sendLinkBtn" runat="server" href="Default.aspx">Send</asp:LinkButton>
+                    <asp:LinkButton class="btn btn-primary" runat="server" href="Default.aspx">Send</asp:LinkButton>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>

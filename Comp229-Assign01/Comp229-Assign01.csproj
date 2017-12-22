@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Content\AllStyles.css" />
     <Content Include="Assets\avatar.jpg" />
     <Content Include="Assets\banner.jpg" />
     <Content Include="Assets\Logo.png" />

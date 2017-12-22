@@ -1,19 +1,24 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Comp229_Assign01._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="center">
+        <br />
+    <%--http://www.techmark.com.au/marketing-services/logo-design-and-branding--%>
+    <asp:Image ID="logoImg" runat="server" ImageUrl="~/Assets/Logo.png" Height="150" Width="150" />
 
-    <asp:Image ID="logoImg" runat="server" ImageUrl="~/Assets/Logo.png" Height="200" Width="200" />
-    <asp:Image ID="bannerImg" runat="server" ImageUrl="~/Assets/banner.jpg" Height="200" Width="1000" />
+        <%--https://uncw.edu/career/resumes.html--%>
+    <asp:Image runat="server" ImageUrl="~/Assets/banner.png" Height="200" Width="800" />
+        <br /><br />
 
     <asp:HyperLink ID="resumeLink" NavigateUrl="Resume.aspx" ImageUrl="~/Assets/photo.jpg" runat="server" 
         ImageHeight="200" ImageWidth="200">
     </asp:HyperLink>
-    <p>Click on the image to link to Resume Page</p>
-
+    <asp:Literal Text="<br/>Click on the image to link to Resume Page <br />" runat="server"></asp:Literal>
+        <br />
     <asp:LinkButton runat="server" id="contactBtnLink" href="Contact.aspx" 
         CssClass="btn btn-primary btn-sm">Contact</asp:LinkButton>
 
-
+        </div>
 
 
     <%--<asp:TextBox ID="name" runat="server"></asp:TextBox>
